@@ -10,7 +10,7 @@ public class sim2Arr {
                 c++;
                 i++;
                 j++;
-            } else if (arr1.get(i) < arr2.get(j))
+            } else if (arr1.get(i) > arr2.get(j))
                 j++;
             else
                 i++;
