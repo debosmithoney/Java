@@ -1,3 +1,5 @@
+package Hashcode.Practics;
+
 import java.util.*;
 import java.io.*;
 public class Pizza{
