@@ -1,3 +1,5 @@
+package AnujBhaiya_DSA;
+
 import java.util.Arrays;
 
 public class SeivePrime {

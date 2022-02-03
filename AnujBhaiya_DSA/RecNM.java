@@ -1,3 +1,5 @@
+package AnujBhaiya_DSA;
+
 public class RecNM {
   public static void main(String[] args) {
     System.out.println(RecurWays(2, 4));
