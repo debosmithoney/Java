@@ -1,3 +1,4 @@
+package AnujBhaiya_DSA;
 //Modulo = 10^9 +7;
 
 public class ModArth {
@@ -8,7 +9,6 @@ public class ModArth {
   public static long fastPower(long a, long b, int n) {
     long res = 1;
     while (b > 0) {
-      // Checking if B is ODD
       if ((b & 1) != 0) {
         res = (res * a % n) % n;
       }
