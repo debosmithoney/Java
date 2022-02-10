@@ -7,23 +7,23 @@ public class RotSortBinSearch {
     System.out.println(getLoc(arr, 10));
     System.out.println(getLoc(arr2, 67));
   }
-  public static int pivot3(int[] A,int B) {
-    int n = A.length;
-    int pivot = pivot(A, 0, n - 1);
-    if (pivot == -1)
-      return binSearch(A, 0, n - 1, B);
-    if (A[pivot] == B)
-      return pivot;
-    if (A[0] <= B)
-      return binSearch(A, 0, pivot - 1, B);
-    return binSearch(A, pivot + 1, n - 1, B);
+  // public static int pivot3(int[] A,int B) {
+  // int n = A.length;
+  // int pivot = pivot(A, 0, n - 1);
+  // if (pivot == -1)
+  // return binSearch(A, 0, n - 1, B);
+  // if (A[pivot] == B)
+  // return pivot;
+  // if (A[0] <= B)
+  // return binSearch(A, 0, pivot - 1, B);
+  // return binSearch(A, pivot + 1, n - 1, B);
 
-  }
+  // }
 
   public static int getLoc(int A[], int B) {
     int piv = pivot(A, 0, A.length - 1);
     if (piv == -1)
-      binSearch(A, 0, A.length - 1, B);
+      return binSearch(A, 0, A.length - 1, B);
     if (A[piv] == B)
       return piv;
     if (A[0] <= B)
@@ -34,7 +34,7 @@ public class RotSortBinSearch {
   public static int pivot(int arr[], int low, int high) {
     if (high < low)
       return -1;
-    if (high==low)
+    if (high == low)
       return low;
     int mid = (low + high) / 2;
     if (mid < high && arr[mid] > arr[mid + 1])
