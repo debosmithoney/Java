@@ -3,7 +3,7 @@ package AnujBhaiya_DSA;
 import java.lang.String;
 
 public class permuteStr {
-  static void printPermutn(String str, String ans) {
+  static  void printPermutn(String str, String ans) {
     if (str.length() == 0) {
       System.out.print(ans + " ");
       return;
@@ -16,7 +16,7 @@ public class permuteStr {
   }
 
   public static void main(String[] args) {
-    String s = "abba";
+    String s = "geek";
     printPermutn(s, "");
   }
 }
