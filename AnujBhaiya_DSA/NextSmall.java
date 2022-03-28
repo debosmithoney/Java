@@ -35,7 +35,7 @@ public class NextSmall {
       if (s.isEmpty()) {
         System.out.print(-1 + " ");
       } else {
-        System.out.print(s.peek()+" ");
+        System.out.print(s.peek()+"");
       }
       s.push(a[i]);
     }

@@ -6,7 +6,9 @@ import java.util.*;
 public class MaxArHist {
   public static void main(String[] args) {
     int a[] = { 4, 2, 1, 5, 6, 3, 2, 4, 2 };
+    int b[] = { 3, 1, 2, 4 };
     System.out.println(maxArea(a));
+    System.out.println(maxArea(b));
   }
 
   public static int maxArea(int a[]) {
