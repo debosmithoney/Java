@@ -14,8 +14,18 @@ public class findDup {
         return ans;
     }
 
+    public static int findDupli(ArrayList<Integer> arr) {
+        HashSet<Integer> set = new HashSet<Integer>();
+        for (int i = 0; i < arr.size(); i++) {
+            if (!set.add(arr.get(i))) {
+                return arr.get(i);
+            }
+        }
+        return -1;
+    }
+
     public static void main(String[] args) {
-        int a[] = { 1, 2, 3, 4, 5, 5, 7, 8 };
+        int a[] = { 1, 3, 2, 2, 2 };
         ArrayList<Integer> arr = new ArrayList<Integer>();
         for (int i = 0; i < a.length; i++) {
             arr.add(a[i]);
@@ -24,6 +34,7 @@ public class findDup {
             System.out.println(arr.get(i));
         }
         System.out.println(arr);
+        System.out.println(findDup.findDupli(arr));
         System.out.println(findDup.findDuplicate(arr));
     }
 }

@@ -2,7 +2,7 @@ package AnujBhaiya_DSA;
 
 public class SortInsertion {
   public static void main(String[] args) {
-    int a[] = {4,2,5,1,6,7,3};
+    int a[] = { 4, 2, 5, 1, 6, 7, 3 };
     int b[] = insertionSort(a);
     for (int i = 0; i < b.length; i++) {
       System.out.print(b[i] + " ");
