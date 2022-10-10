@@ -2,7 +2,7 @@ package AnujBhaiya_DSA;
 
 public class SortMerge {
   public static void main(String[] args) {
-    int[] a = { 4, 6, 2, 5, 7, 9, 1, 3 };
+    int[] a = { 4, 6, 2, 5, 7, 9,  3 };
     mergeSort(a, 0, a.length - 1);
     for (int i = 0; i < a.length; i++) {
       System.out.print(a[i] + " ");
