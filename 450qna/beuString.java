@@ -2,7 +2,7 @@
 
 public class beuString {
     public static int makeBeautiful(String str) {
-        int a = str.charAt(0);
+        int a = (int) str.charAt(0);
         StringBuffer sbr = new StringBuffer(str);
         sbr.reverse();
         int b = sbr.charAt(0);

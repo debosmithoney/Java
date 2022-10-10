@@ -7,7 +7,7 @@ public class fairStr {
 
   // Utility method to get minimum flips when
   // alternate string starts with expected char
-  public static int getFlipWithStartingCharcter(String str,
+  public static int getFlipWithStartingCharcter(java.lang.String str,
       char expected) {
     int flipCount = 0;
     for (int i = 0; i < str.length(); i++) {
@@ -24,7 +24,7 @@ public class fairStr {
 
   // method return minimum flip to make binary
   // string alternate
-  public static int minFlipToMakeStringAlternate(String str) {
+  public static int minFlipToMakeStringAlternate(java.lang.String str) {
     // return minimum of following two
     // 1) flips when alternate string starts with 0
     // 2) flips when alternate string starts with 1
@@ -34,7 +34,7 @@ public class fairStr {
 
   // Driver code to test above method
   public static void main(String args[]) {
-    String str = "0001010111";
+    java.lang.String str = "0001010111";
     System.out.println(minFlipToMakeStringAlternate(str));
   }
 
