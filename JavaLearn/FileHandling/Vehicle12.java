@@ -1,5 +1,3 @@
-package JavaLearn;
-
 import java.io.*;
 
 public class Vehicle12 implements Serializable {
